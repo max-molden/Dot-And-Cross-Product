@@ -108,10 +108,10 @@ def getVect(dimension, which):
 	return vect
 
 '''
-kdkkdkd
-input:
-output:
-processing: dddddd. no need to use a for-loop as there will always only be 3 elements
+function to calculate the cross product and display correct signs (-/+) of operations
+input: list (the two vectors)
+output: str (3 strings containing various information about calculating the cross product at different stages of math/completion and the final vector in the form x*i+y*j+z*k)
+processing: creates the initial string and uses selecction structure to append next work with correct signage (+/-). no need to use a for-loop as there will always only be 3 elements
 '''
 def crossProd(arr1, arr2):
 	work_str = f"(({arr1[1]} * {arr2[2]}) - ({arr1[2]} * {arr2[1]}))i - (({arr1[0]} * {arr2[2]}) - ({arr1[2]} * {arr2[0]}))j + (({arr1[0]} * {arr2[1]}) - ({arr1[1]} * {arr2[0]}))k "
